@@ -1,0 +1,314 @@
+@import "variables.scss";
+ @import "animations.scss";
+ * {
+     padding: 0;
+     margin: 0;
+}
+ ul {
+     list-style: none;
+}
+ a {
+     text-decoration: none;
+     color: $off-white;
+     font-weight: 500;
+     transition: .4s;
+}
+ a:hover {
+     color: $link-hover;
+     transition: .3s;
+}
+ body {
+     color: $off-white;
+     font-family: $montserrat;
+     font-size: 16px;
+     overflow-x: hidden;
+}
+ .hero-container {
+     background-color: $body-bg-alt;
+     background-image: $hero-bg-img;
+     background-attachment: fixed;
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     width: 100%;
+}
+ .navigation-bar {
+     display: flex;
+     justify-content: space-between;
+     position: fixed;
+     top: 0;
+     padding: 15px 12px;
+     width: 100%;
+     z-index: 999;
+     transition: .3s;
+     #nav-logo {
+         margin-left: 18px;
+         margin-top: 8px;
+         z-index: 999;
+    }
+     nav ul {
+         display: flex;
+         margin-top: 12px;
+         margin-right: 18px;
+         li {
+             padding: 20px 12px 12px 12px;
+             font-size: .9em;
+        }
+    }
+}
+ .navbar-bg {
+     background-color: $white;
+     box-shadow: 0 2px 6px $light-grey;
+     transition: .3s;
+}
+ .header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+     font-size: 3em;
+     width: 100%;
+     height: 100%;
+     background-color: $body-bg-alt;
+     background-image: $hero-bg-img;
+     background-attachment: fixed;
+     background-size: cover;
+     background-position: center;
+}
+ .skills-section {
+     height: 100vh;
+     background-color: $white;
+     position: relative;
+     display: flex;
+     color: $dark-grey;
+     z-index: 99;
+     align-items: center;
+     justify-content: center;
+}
+ .about-info-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: auto;
+     width: 80%;
+     font-size: .8em;
+     .about {
+         height: 250px;
+         width: 50%;
+         border-right: 2px solid;
+         .about-text {
+             width: 90%;
+             margin-top: 30px;
+        }
+    }
+     .skills {
+         height: 250px;
+         width: 50%;
+         margin-left: 30px;
+         .skill-icons {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             align-items: center;
+             height: 100%;
+             width: 100%;
+        }
+         img {
+             width: 58px;
+             margin-right: 20px;
+        }
+    }
+}
+ .projects-section {
+     height: 100vh;
+     background-image: $hero-bg-img;
+     background-attachment: fixed;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     color: $dark-grey;
+     z-index: 99;
+     align-items: center;
+     justify-content: center;
+
+     .heading {
+
+        margin-top: 100px;
+        color: $white;
+        font-size: 3em;
+     }
+     .project-card-container {
+         background-image: $hero-bg-img;
+         background-attachment: fixed;
+         background-size: cover;
+         background-position: center;
+         height: 100%;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+     .project-card {
+         width: calc(100% / 2);
+         margin: 1.66%;
+         height: 325px;
+         background-color: $white;
+         border-radius: 2px;
+
+         .project-img {
+
+          display: flex;
+          justify-content: center;
+          box-shadow: 0 2px 6px #797979;
+        }
+
+        img {
+
+          width: 100%;
+          height: 100%;
+        }
+
+        .project-text {
+
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    }
+}
+ .contact-section {
+     height: 100vh;
+     background-color: $white;
+     position: relative;
+     flex-direction: column;
+     display: flex;
+     color: $dark-grey;
+     z-index: 99;
+     align-items: center;
+     justify-content: center;
+     .contact-form-container {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+}
+ .contact-form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     flex-direction: column;
+
+     .contact-heading {
+
+        width: 50%;
+        margin-bottom: 20px;
+
+        p:nth-child(1) {
+
+            font-weight: 700;
+            font-size: .9em;
+        }
+
+        p:nth-child(2) {
+
+            font-size: .8em;
+        }
+
+     }
+
+
+
+}
+ .contact-input-container {
+     width: 50%;
+
+ .field {
+     position: relative;
+     margin-bottom: 10px;
+     .glyphicon {
+         position: absolute;
+         top: 8px;
+         left: 10px;
+         transition: .3s;
+    }
+     input {
+         width: 100%;
+         height: 30px;
+         font-size: .8em;
+         border-radius: 2px;
+         border: 1px solid $off-white;
+         background-color: $input-bg-color;
+         outline: none;
+         transition: .3s;
+         padding-left: 5px;
+         padding-left: 40px;
+    }
+     textarea {
+         width: 100%;
+         height: 150px;
+         font-size: .8em;
+         border-radius: 2px;
+         border: 1px solid $off-white;
+         background-color: $input-bg-color;
+         outline: none;
+         padding-left: 5px;
+         padding-top: 4px;
+         margin-top: 2px;
+    }
+}
+ .field input:hover  {
+     box-shadow: 0 0 4px $box-shadow;
+     transition: .3s;
+}
+ .field textarea:hover  {
+     box-shadow: 0 0 4px $box-shadow;
+     transition: .3s;
+}
+ .field input:focus  {
+     box-shadow: 0 0 4px $box-shadow;
+     transition: .3s;
+}
+ .field textarea:focus  {
+     box-shadow: 0 0 4px $box-shadow;
+     transition: .3s;
+}
+}
+ .box-header {
+     border: solid 2px;
+     display: inline;
+     width: auto;
+     padding: 2px 10px;
+     color: $white;
+     background-color: $dark-grey;
+     font-style: italic;
+     font-size: 1em;
+     box-shadow: 0 1px 1px $light-grey;
+     border: none;
+     border-radius: 2px;
+}
+ .navLinksScrollColor {
+     color: $alt-link-color;
+     transition: .4s;
+}
+ .navLinksScrollColor:hover {
+     color: $alt-link-hover;
+     transition: .3s;
+}
+
+.glyphicon-focus {
+
+    transition: .3s;
+    color: $glyphicon-focus;
+ }
+
+.bold-heading {
+
+    font-size: .9em;
+    font-weight: 700;
+    color: $dark-grey;
+}
