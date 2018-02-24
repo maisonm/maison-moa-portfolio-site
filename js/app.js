@@ -1,4 +1,4 @@
-// ADD SVG BACKGROUND TO HEADER SECTION THAT HAS PARALLAX EFFECT.
+
 window.onload = () => {
     parallax(60, headerParallax);
     calculateSkillSectionTop(70);
